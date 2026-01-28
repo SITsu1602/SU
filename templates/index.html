@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+<body>
+<form method="post">
+    <input type="text" name="number">
+    <button value="Submit">Submit</button>
+</form>
+{% if pred %}
+  <h1>The text is </h1>
+  <p>{{ pred }}</p>
+{% endif %}
+</body>
+</html>
